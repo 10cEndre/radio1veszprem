@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>72.32 Rádió 1 Veszprém</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        h1 {
+            color: #ffcc00;
+            margin: 0;
+        }
+        .container {
+            padding: 100px 0 0;
+        }
+        .news {
+            margin-bottom: 40px;
+        }
+        .news h2 {
+            color: #ffcc00;
+        }
+        .now-playing {
+            margin-bottom: 40px;
+        }
+        .now-playing h2 {
+            color: #ffcc00;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .recommendations {
+            margin-bottom: 40px;
+        }
+        .recommendations h2 {
+            color: #ffcc00;
+        }
+        .recommendations ul {
+            padding: 0;
+            margin: 0;
+        }
+        .recommendations li {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .recommendations li:last-child {
+            border-bottom: none;
+        }
+        .audio-player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .audio-player audio {
+            width: 100%;
+        }
+        .audio-player h3 {
+            color: #ffcc00;
+            margin: 0;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>72.32 Rádió 1 Veszprém</h1>
+    </header>
+    <div class="container">
+        <!-- Friss hír -->
+        <div class="news">
+            <h2>Legfrissebb hírek</h2>
+			<p>Elindult a Rádió 1 DJ szavazás. Szavazz kedvenc DJ-dre a radio1.hu/djszavazas oldalon. Közzététel dátuma: 2024. 11. 07.</p>
+            <p>19:30 és 22:00 között Megrendezésre kelül a Töltött káposzta fesztivál Balatonalmádiban! A buli zenekert és retródiszkót is kínál. A buli a Rádió 1 Veszprém-en is közvetítésre kerül. Közzététel dátuma: 2024. 10. 05.</p>
+            <a href="./hirek.html">Kattints ide a további hírekhez</a>
+        </div>
+
+        <!-- Most játszott dalok -->
+        <div class="now-playing">
+            <h2>Mai zenék • 2024. 11. 13.</h2>
+            <ul>
+                <li>ARIZONA ZERVAS - RAXANNE</li>
+                <li>24KGOLDN - MOOD</li>
+                <li>ELLIE GOULDING - HATE ME</li>
+				<li>MGK - BAD THINGS</li>
+				<li><a href="./datumvalaszto.html">Kattints ide a további zenékhez</a></li>
+            </ul>
+        </div>
+		
+		<div class="now-playing">
+            <h2>Kipróbálom a rádiózást</h2>
+            <ul>
+				<li><a href="djpult.html">Kattints ide az online DJ pult eléréséhez</a></li>
+            </ul>
+        </div>
+		
+		<div class="now-playing">
+            <h2>Kívánságműsor</h2>
+            <ul>
+				<li><a href="https://docs.google.com/forms/d/1jDuRgzofxD_o3IjByUNnnGS0QNov4ZuHQ1Rg-QzbS3I">Kérek én is egy zenét!</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Fixált lejátszó -->
+    <div class="audio-player">
+        <h3>Most szól: Radio1 - Csak igazi mai slager megy!!!</h3>
+        <audio controls>
+            <source src="https://icast.connectmedia.hu/5202/live.mp3?time=1730962775" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>

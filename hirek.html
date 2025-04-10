@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hírek - 72.32 Rádió 1 Veszprém</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            color: #ffcc00;
+            margin: 0;
+        }
+        .news-container {
+            margin-top: 20px;
+        }
+        .news-item {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .news-item h2 {
+            color: #ffcc00;
+            font-size: 1.5em;
+            margin: 0 0 5px;
+        }
+        .news-item p.date {
+            font-size: 0.9em;
+            color: #888888;
+            margin: 0 0 10px;
+        }
+        .news-item p.description {
+            margin: 0;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+		.audio-player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .audio-player audio {
+            width: 100%;
+        }
+        .audio-player h3 {
+            color: #ffcc00;
+            margin: 0;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="Radio1Veszprem.hu.html">(Vissza)</a> Hírek - 72.32 Rádió 1 Veszprém</h1>
+    </header>
+    <div class="news-container">
+		<div class="news-item">
+            <h2>Elindult a Rádió 1 DJ szavazás. </h2>
+            <p class="date">Közzététel dátuma: 2024. 11. 07.</p>
+            <p class="description">Szavazz kedvenc DJ-dre a radio1.hu/djszavazas oldalon.</p>
+        </div>
+        <div class="news-item">
+            <h2>Töltött káposzta fesztivál Balatonalmádiban</h2>
+            <p class="date">Közzététel dátuma: 2024. 10. 05.</p>
+            <p class="description">A fesztivál 19:30 és 22:00 között kerül megrendezésre, és élő közvetítés lesz a Rádió 1 Veszprém-en is!</p>
+        </div>
+        <div class="news-item">
+            <h2>Zsömle méretének csökkenése a zsugorfláció miatt</h2>
+            <p class="date">Közzététel dátuma: 2024. 10. 04.</p>
+            <p class="description">A zsömle méretének csökkenése miatt sok vásárló elégedetlen. Ismerje meg a részleteket a zsugorfláció hatásairól!</p>
+        </div>
+    </div>
+	
+	<div class="audio-player">
+        <h3>Most szól: Radio1 - Csak igazi mai slager megy!!!</h3>
+        <audio controls>
+            <source src="https://icast.connectmedia.hu/5202/live.mp3?time=1730962775" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
